@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="english" />
+    <meta name="author" content="Harsha Chekuri" />
+    <meta name="description" content="this is todo list project" />
+    <meta name="keywords" content="html css js javascript todo to-do beginner project" />
+    <meta name="robots" content="index follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <title>To-Do List</title>
+    <link rel="icon" type="svg.xml" href="/template/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css"/>
+</head>
+<body>
+<header></header>
+<main>
+    <div class="todo-container">
+        <div class="todo-main">
+            <div class="todo-title-box">
+                <h2 class="todo-title-name">To-Do List</h2>
+                <img class="todo-title-image" type="img" src="/template/title.png" />
+            </div>
+            <div class="todo-search-box">
+                <img class="todo-search-image" type="img" src="/template/search.png" alt="Search icon" />
+                <input class="todo-search-input" type="text" id="todoSearchInput" placeholder="Enter here"/>
+                <button class="todo-search-button" id="todoSearchButton" onclick="addTask()">Add</button>
+            </div>
+            <div class="todo-list-items">
+                <ul id="todoListItemsSelectParent">
+                    <!--
+                        <li class="todo-list-items-select">Task-1</li>
+                        <li class="todo-list-items-select">Task-2</li>
+                        <li >Task-3</li>
+                        <li >Task-4</li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+<script src="/JS/script.js"></script>
+</body>
+</html>
