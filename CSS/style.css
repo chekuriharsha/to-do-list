@@ -3,9 +3,14 @@
     padding: 0px;
     font-family: 'Raleway', sans-serif;
 }
+body{
+    background: linear-gradient(135deg ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1 ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1);
+    
+}
 .todo-container{
     background: linear-gradient(135deg ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1 ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#9941f1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1);
     width: 100vw;
+    min-width: 450px;
     height: 100vh; 
     animation: animation-name 15s infinite linear; 
     background-size: 200% 200%;
@@ -139,4 +144,76 @@ ul li::before{
 .todo-list-items li span:hover{
     background-color: #49108B;
     color: #fff;
+}
+@media only screen and (max-width : 640px){
+    .todo-container{
+        background: linear-gradient(180deg ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1 ,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#9941f1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1,#7E30E1);
+        width: 100vw;
+        min-width: 450px;
+        height: 100vh; 
+        animation: animation-name 15s infinite linear; 
+        background-size: 200% 200%;
+        display: flex;
+        justify-content: center;
+    }
+    @keyframes animation-name {
+        0% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    .todo-main{
+        margin: 30px;
+        background: linear-gradient(135deg,#F3F8FF,#E26EE5);
+        width: 80%;
+        min-width: 400px;
+        height: fit-content;
+        border-radius: 10px;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .todo-title-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .todo-search-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:whitesmoke;
+        border-radius: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .todo-search-image{
+        height: 30px;
+        padding-left: 10px;
+    }
+    .todo-search-input{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: whitesmoke;
+        padding-left: 8px;
+        font-size: large;
+    }
+    .todo-search-button{
+        width: 80px;
+        border: none;
+        outline: none;
+        height: 30px;
+        background-color: #E26EE5;
+        font-size: large;
+        border-radius: 50px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .todo-search-button:hover{
+        background-color: #49108B;
+        color: #F3F8FF;
+    }
 }
